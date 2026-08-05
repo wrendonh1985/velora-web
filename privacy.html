@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Velora</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1a1a1f; background: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e9e9ee; background: #0b0b0f; } }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .meta { color: #6b6b76; font-size: .9rem; margin-top: 0; }
+  .lang { font-size: .9rem; margin-bottom: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #d8d8e0; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #2a2a33; } }
+  code { background: #ececf1; padding: .1rem .3rem; border-radius: .2rem; font-size: .9em; }
+  @media (prefers-color-scheme: dark) { code { background: #1e1e26; } }
+  .destacado { border-left: 3px solid #6c5ce7; padding: .75rem 1rem; background: #6c5ce70f; margin: 1.5rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Velora Privacy Policy</h1>
+<p class="meta">Last updated: 5 August 2026</p>
+<p class="lang"><a href="./privacidad.html">Leer en español</a></p>
+
+<p>Velora is an app for tracking personal and household finances. This policy explains what
+data we handle, what for, who it is shared with, and how you can control it. It is written to
+be understood, not to protect us.</p>
+
+<h2>Who is responsible</h2>
+<p>The data controller is <strong>Wilson Rendón</strong>, an individual residing in Colombia.</p>
+<p>For any question, complaint, or to exercise your rights, write to
+<a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
+
+<h2>What data we handle</h2>
+<table>
+  <tr><th>Category</th><th>What it includes</th><th>Why</th></tr>
+  <tr>
+    <td>Account</td>
+    <td>Your email address and password. The password is always stored hashed
+        (<code>bcrypt</code>), never in plain text; nobody, including us, can read it.</td>
+    <td>To identify you and give you access to your data.</td>
+  </tr>
+  <tr>
+    <td>Profile</td>
+    <td>Your chosen display name, your role in the household, and your language and theme
+        preferences.</td>
+    <td>So the app works and looks the way you want.</td>
+  </tr>
+  <tr>
+    <td>Financial data you enter</td>
+    <td>Transactions (date, amount, description, category, notes), budget, recurring
+        expenses, and debts with their installments.</td>
+    <td>It is the content of the app: without it there is nothing to show you.</td>
+  </tr>
+  <tr>
+    <td>Accounts and cards</td>
+    <td>The name you give them (your bank, for example), the statement day, the payment day
+        and the credit limit. <strong>Never the card number, the CVV, or banking
+        credentials.</strong></td>
+    <td>To work out which statement each purchase falls on.</td>
+  </tr>
+  <tr>
+    <td>Household</td>
+    <td>The household name, its currency, and who belongs to it.</td>
+    <td>To share the app with your family, if you choose to.</td>
+  </tr>
+  <tr>
+    <td>Recovery code</td>
+    <td>Only its cryptographic hash (SHA-256). <strong>The code itself is never
+        stored</strong>: it is shown once and it is yours to keep.</td>
+    <td>So you can recover your password without relying on email.</td>
+  </tr>
+  <tr>
+    <td>Technical error log</td>
+    <td>Which operation failed, when, and the technical error code. We do not store the full
+        error text, because it could carry along data you had typed.</td>
+    <td>So we can fix failures.</td>
+  </tr>
+</table>
+
+<h2>What Velora does not do</h2>
+<ul>
+  <li><strong>No analytics, no advertising, no third-party trackers.</strong> There is no SDK
+      following what you do inside or outside the app.</li>
+  <li><strong>We do not sell or hand over your data to anyone</strong>, for commercial or any
+      other purposes.</li>
+  <li><strong>We do not connect to your bank.</strong> Velora does not read your accounts or
+      bank transactions: everything you see there, you typed.</li>
+  <li><strong>We do not use your data to train models</strong> or to profile you.</li>
+</ul>
+
+<h2>Your fingerprint and your face</h2>
+<div class="destacado">
+  <p>If you turn on biometric unlock, the one verifying your fingerprint or face is
+  <strong>your own phone</strong>, using the manufacturer's system.
+  <strong>Velora never receives, sees or stores any biometric data.</strong> All we store is a
+  yes/no of whether you enabled that option.</p>
+</div>
+
+<h2>Who else can see your data</h2>
+<div class="destacado">
+  <p><strong>If you belong to a household with other people, whoever administers it can see
+  the detail of your transactions</strong>: how much you spend, on what and when. The other
+  members cannot.</p>
+  <p>That is why, before joining a household by invitation, the app warns you and you have to
+  accept it explicitly. If you do not accept, you do not join. The date you accepted is
+  recorded.</p>
+</div>
+<p>If you are the only person in your household, nobody else sees your data.</p>
+
+<h2>Who we share it with</h2>
+<p>Only with those needed for the app to work, and always as data processors, not owners of
+the data:</p>
+<ul>
+  <li><strong>Supabase, Inc.</strong> — hosts the database and the account system.</li>
+  <li><strong>Google Play and the App Store</strong> — distribute the application. They do not
+      receive your financial data.</li>
+</ul>
+<p>We may also hand over data if a competent authority legally requires it.</p>
+
+<h2>Where your data lives</h2>
+<p>On Supabase servers in the <strong>United States</strong> (region <code>us-east-2</code>,
+Ohio). If you write from Colombia, the European Union or another country, your data is
+transferred and stored there. Supabase acts as a processor and is bound by a data processing
+agreement.</p>
+
+<h2>Payments</h2>
+<p>Velora is free today. When a paid subscription exists, the charge will be processed
+entirely by Google Play or the App Store: <strong>we never receive or see your card
+details</strong>. We will update this policy before enabling it, to spell out who is
+involved.</p>
+
+<h2>How long we keep it</h2>
+<p>For as long as you have an account. When you delete it from the app:</p>
+<ul>
+  <li>Your email, password, transactions, budget, recurring expenses, cards and debts are
+      deleted.</li>
+  <li>If you were the only person in the household, the whole household is deleted.</li>
+  <li>If other people remain, shared items (categories, household debts) stay for them; yours
+      do not.</li>
+</ul>
+<p>Deletion is immediate and cannot be undone. We keep no copies of you afterwards, other than
+what the provider's backups may hold temporarily before rotating.</p>
+
+<h2>Your rights</h2>
+<p>At any time you can:</p>
+<ul>
+  <li><strong>Access</strong> your data and <strong>take it with you</strong>: in the app, under
+      <em>Settings → Export my data</em>, which hands you everything as CSV files.</li>
+  <li><strong>Correct it</strong>: by editing your transactions and your profile.</li>
+  <li><strong>Delete it</strong>: under <em>Settings → Delete my account</em>.</li>
+  <li><strong>Object</strong> to processing or <strong>withdraw</strong> your consent, by
+      writing to us.</li>
+</ul>
+<p>None of these rights costs money or requires a justification. If you prefer to exercise them
+by email, write to <a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
+<p>In Colombia, under Law 1581 of 2012, we will answer queries within ten (10) business days and
+complaints within fifteen (15) business days. If you are not satisfied, you may turn to the
+Superintendencia de Industria y Comercio. If you are in the European Union, we will respond
+within the one (1) month period set by the GDPR and you may complain to your country's
+supervisory authority.</p>
+
+<h2>Children</h2>
+<p>Velora is not directed at children under 14 and we do not knowingly collect data from
+minors. If an adult registers a minor of their family within their household, that adult takes
+responsibility for doing so. If you believe a minor has given us data without authorisation,
+write to us and we will delete it.</p>
+
+<h2>Security</h2>
+<p>All traffic is encrypted (HTTPS). Passwords are stored with <code>bcrypt</code>. Access to
+data is isolated per person and per household directly in the database, so the application
+cannot read another household's data even if it tried. No system is infallible: if a breach
+affecting you were to occur, we will tell you.</p>
+
+<h2>Changes to this policy</h2>
+<p>If anything relevant changes, we will update this page and the date above, and we will let
+you know inside the app when the change affects how we handle your data.</p>
+
+</body>
+</html>
