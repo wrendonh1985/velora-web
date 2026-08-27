@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Velora</title>
+<title>Velora — Tu dinero, sin complicaciones</title>
+<meta name="description" content="App de finanzas personales y familiares. Simula un crédito antes de pedirlo, proyecta si te alcanza para tus metas y lleva tus tarjetas con su corte y su pago.">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -14,7 +15,13 @@
   @media (prefers-color-scheme: dark) { body { color: #e9e9ee; background: #0b0b0f; } }
   h1 { font-size: 2rem; margin-bottom: .25rem; }
   .tagline { color: #6b6b76; margin-top: 0; }
-  ul { margin-top: 2rem; padding-left: 1.1rem; }
+  .intro { margin-top: 2rem; }
+  h2 { font-size: 1rem; margin: 2.25rem 0 .35rem; }
+  h2 + p { margin-top: 0; }
+  hr { border: 0; border-top: 1px solid #d8d8de; margin: 3rem 0 1.5rem; }
+  @media (prefers-color-scheme: dark) { hr { border-top-color: #2a2a33; } }
+  .legal { font-size: .9rem; }
+  ul { padding-left: 1.1rem; }
   li { margin-bottom: .5rem; }
   a { color: #6c5ce7; }
 </style>
@@ -22,7 +29,52 @@
 <body>
   <h1>Velora</h1>
   <p class="tagline">Tu dinero, sin complicaciones.</p>
-  <ul>
+
+  <p class="intro">
+    Velora es una app de finanzas personales y familiares. Sirve para llegar a
+    fin de mes sabiendo en qué se va tu dinero, y para cumplir las metas que te
+    pongas.
+  </p>
+
+  <h2>Antes de pedir un crédito, mira cómo te queda el mes</h2>
+  <p>
+    Velora simula la cuota con su tasa y su plazo, y te dice si te alcanza. Con
+    meses concretos, no con una tendencia. Antes de firmar, no después.
+  </p>
+
+  <h2>¿Te alcanza para esa meta?</h2>
+  <p>
+    Con lo que entra y lo que sale, Velora proyecta mes a mes y te responde con
+    una fecha. Si no alcanza, te dice cuánto tendrías que apartar cada mes.
+  </p>
+
+  <h2>Abona a capital y mira qué pasa</h2>
+  <p>
+    Registra un abono extra a tu deuda y ve cuánto se acorta el plazo. Si te
+    equivocaste, lo deshaces.
+  </p>
+
+  <h2>Tu tarjeta, con su corte y su pago</h2>
+  <p>
+    Cada compra cae en el extracto que le corresponde, así sabes qué vas a pagar
+    este mes y qué queda para el siguiente.
+  </p>
+
+  <h2>En familia, sin renunciar a lo tuyo</h2>
+  <p>
+    Comparte el hogar con quien quieras. Cada quien lleva lo suyo y quien
+    administra ve el conjunto.
+  </p>
+
+  <h2>Lo que anotas es tuyo</h2>
+  <p>
+    Sin publicidad, sin rastreadores y sin vender datos. Velora no se conecta a
+    tu banco: lo que ves ahí lo escribiste tú.
+  </p>
+
+  <hr>
+
+  <ul class="legal">
     <li><a href="./privacidad.html">Política de privacidad</a></li>
     <li><a href="./privacy.html">Privacy Policy (English)</a></li>
     <li><a href="./borrar-cuenta.html">Borrar tu cuenta · Delete your account</a></li>
