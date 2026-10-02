@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velora — Te invitaron a un parche</title>
+<meta name="description" content="Te invitaron a un parche en Velora: dividan gastos entre personas de hogares distintos.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; max-width: 34rem; margin: 0 auto; padding: 4rem 1.5rem;
+    color: #1a1a1f; background: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e9e9ee; background: #0b0b0f; } }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  hr { border: 0; border-top: 1px solid #d8d8de; margin: 3rem 0 1.5rem; }
+  @media (prefers-color-scheme: dark) { hr { border-top-color: #2a2a33; } }
+  .legal { font-size: .9rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: .5rem; }
+  a { color: #6c5ce7; }
+  .boton { display: inline-block; padding: .7rem 1.4rem; border-radius: .6rem; background: #6c5ce7; color: #fff; font-weight: 700; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Te invitaron a un parche en Velora</h1>
+  <p>Código: <strong id="codigo">—</strong></p>
+  <p><a id="abrir" class="boton" href="#">Abrir en Velora</a></p>
+  <p>¿Aún no tienes Velora?</p>
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.wrendonh.velora">Android</a> ·
+    <a href="https://testflight.apple.com/join/uBUcEd5J">iPhone</a>
+  </p>
+  <p>Cuando la instales, entra a Mi dinero → Parches → Unirme con código.</p>
+</main>
+<script>
+  // Solo letras del alfabeto de los codigos (generate_invite_code: 12 de
+  // ABCDEFGHJKMNPQRSTUVWXYZ23456789): nada de lo que venga en la URL llega al
+  // HTML sin pasar por aqui.
+  var c = (new URLSearchParams(location.search).get('c') || '')
+    .toUpperCase().replace(/[^ABCDEFGHJKMNPQRSTUVWXYZ23456789]/g, '').slice(0, 12);
+  document.getElementById('codigo').textContent = c || '—';
+  var url = 'velora://parche/unirse/' + c;
+  document.getElementById('abrir').href = url;
+  if (c) location.href = url;
+</script>
+  <hr>
+
+  <ul class="legal">
+    <li><a href="./privacidad.html">Política de privacidad</a></li>
+    <li><a href="./privacy.html">Privacy Policy (English)</a></li>
+    <li><a href="./borrar-cuenta.html">Borrar tu cuenta · Delete your account</a></li>
+  </ul>
+</body>
+</html>
