@@ -53,6 +53,9 @@ Está escrita para que se entienda, no para protegernos a nosotros.</p>
 <h2>Quién es responsable</h2>
 <p>El responsable del tratamiento es <strong>Wilson Rendón</strong>, persona natural, con
 domicilio en Colombia.</p>
+<!-- PENDIENTE (Will): dirección y teléfono. Los exige el Decreto 1377 de 2013, art. 13.
+     Si no quieres publicar la de tu casa, sirve una dirección de correspondencia. -->
+<p>Dirección de correspondencia: [DIRECCIÓN], Colombia. Teléfono: [TELÉFONO].</p>
 <p>Para cualquier consulta, reclamo o para ejercer tus derechos, escribe a
 <a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
 
@@ -164,11 +167,16 @@ domicilio en Colombia.</p>
 
 <h2>Con quién los compartimos</h2>
 <p>Si te unes a un parche, las personas de ese parche ven tu nombre y lo que se registra dentro del parche (los gastos, tu parte y los pagos entre ustedes). No ven tus cuentas, tus movimientos ni nada de tu hogar. Quien tenga el código de invitación ve el nombre del parche y el de quien lo creó. Lo que confirmes de un parche entra como un movimiento más en tu Velora, así que el administrador de tu hogar lo ve igual que ve tus demás movimientos.</p>
-<p>Si añades a alguien que no tiene la app, guardamos el nombre que escribes y lo que se anote a su nombre en el parche, y solo lo ven las personas del parche. Si esa persona se une con su enlace, pasa a ser suyo y lo ve en su Velora. Si no se une, se queda en el parche porque forma parte de sus cuentas: cualquiera del parche puede cambiarle el nombre, y esa persona puede pedirnos que lo quitemos escribiendo a velora.privacidad@gmail.com.</p>
+<p>Si añades a alguien que no tiene la app, guardamos el nombre que escribes y lo que se anote a su nombre en el parche, y solo lo ven las personas del parche. Si esa persona se une con su enlace, pasa a ser suyo y lo ve en su Velora. Si no se une, se queda en el parche porque forma parte de sus cuentas: cualquiera del parche puede cambiarle el nombre, y esa persona puede pedirnos que lo quitemos escribiendo a velora.privacidad@gmail.com. Si ya tiene gastos o pagos anotados, esas cifras se quedan porque sin ellas no cuadran las cuentas de los demás, pero borramos su nombre y queda como «Persona eliminada», sin nada que la identifique.</p>
 <p>Solo con quienes hacen falta para que la app funcione, y siempre como encargados del
 tratamiento, no como dueños de los datos:</p>
 <ul>
-  <li><strong>Supabase, Inc.</strong> — aloja la base de datos y el sistema de cuentas.</li>
+  <li><strong>Supabase Pte. Ltd.</strong> — aloja la base de datos y el sistema de cuentas.</li>
+  <li><strong>Brevo (Sendinblue SAS)</strong> — envía los correos de la cuenta: el de
+      confirmar tu correo y el de recuperar la contraseña. Recibe tu dirección de correo y el
+      contenido de ese mensaje; nada más.</li>
+  <li><strong>Microsoft (OneDrive)</strong> — guarda nuestras copias de seguridad
+      <strong>cifradas</strong>. Sin nuestra clave, Microsoft no puede leerlas.</li>
   <li><strong>Google Play y App Store</strong> — distribuyen la aplicación. No reciben tus
       datos financieros.</li>
   <li><strong>Google LLC</strong> — <em>solo si eliges «Continuar con Google»</em>. Comprueba
@@ -187,7 +195,8 @@ tratamiento, no como dueños de los datos:</p>
 <p>En servidores de Supabase en <strong>Estados Unidos</strong> (región <code>us-east-2</code>,
 Ohio). Si escribes desde Colombia, la Unión Europea u otro país, tus datos se transfieren y
 almacenan allí. Supabase actúa como encargado y está sujeto a un contrato de tratamiento de
-datos.</p>
+datos, que forma parte de sus condiciones de servicio. Brevo trata tu correo en la Unión
+Europea.</p>
 
 <h2>En tu teléfono</h2>
 <p>Velora guarda una copia de tus datos en el propio dispositivo para que la aplicación abra y
@@ -228,9 +237,13 @@ interviene.</p>
       a ti. Es la única forma de que la deuda de esa persona siga cuadrando: sin él, su saldo
       aparecería reducido y sin el pago que lo explica.</li>
 </ul>
-<p>El borrado es inmediato y no se puede deshacer. No conservamos copias tuyas después,
-salvo lo que puedan retener temporalmente las copias de seguridad del proveedor antes de
-rotarse. Los archivos que genera <em>Exportar mis datos</em> se borran solos en menos de un
+<p>El borrado es inmediato y no se puede deshacer. Lo único que queda es lo que ya estaba en
+<strong>nuestras copias de seguridad</strong>: hacemos una cada semana y guardamos las de las
+últimas <strong>ocho semanas</strong> para poder recuperar el servicio si algo falla. Las
+guardamos en nuestro equipo y, cifradas, en la nube. No se usan para nada más, y a las ocho
+semanas ya no queda ninguna con tus datos.<!-- OJO: solo es cierto cuando
+scripts/respaldo.sh rote también las copias locales (hoy rota solo las de OneDrive). --> Las copias no se usan para nada más, y a las ocho semanas ya no queda ninguna
+con tus datos. Los archivos que genera <em>Exportar mis datos</em> se borran solos en menos de un
 día.</p>
 <p><strong>Borrar tu cuenta nunca se bloquea.</strong> Si eres la única persona que administra
 un hogar donde queda más gente, Velora nombra administradora a la persona más antigua que se
@@ -251,23 +264,37 @@ quien lo administre.</p>
 </ul>
 <p>Ninguno de esos derechos cuesta dinero ni requiere justificarse. Si prefieres ejercerlos por
 correo, escribe a <a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
-<p>En Colombia, conforme a la Ley 1581 de 2012, responderemos las consultas en un máximo de
-diez (10) días hábiles y los reclamos en quince (15) días hábiles. Si no quedas conforme,
+<p><strong>Cómo se hace una consulta o un reclamo.</strong> Escribe a
+<a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a> desde el correo de
+tu cuenta (o, si no tienes cuenta, diciendo cómo te identificamos) y cuéntanos qué pides:
+conocer tus datos, corregirlos, borrarlos, revocar tu autorización o quejarte de algo.
+Si es un reclamo, di qué hechos lo motivan y, si los tienes, adjunta los documentos que lo
+apoyen.</p>
+<p>En Colombia, conforme a la Ley 1581 de 2012, responderemos las <strong>consultas</strong>
+en un máximo de diez (10) días hábiles; si no alcanzamos, te diremos por qué y te
+responderemos en otros cinco (5) como mucho. Los <strong>reclamos</strong>, en quince (15)
+días hábiles, prorrogables ocho (8) más avisándote el motivo. Si a tu reclamo le falta algo,
+te lo pediremos dentro de los cinco (5) días hábiles siguientes; si pasan dos (2) meses sin
+que lo completes, entenderemos que desististe. Mientras lo resolvemos, tus datos quedarán
+marcados como «reclamo en trámite». Si no quedas conforme,
 puedes acudir a la Superintendencia de Industria y Comercio. Si estás en la Unión Europea,
 responderemos dentro del plazo de un (1) mes previsto en el RGPD y puedes reclamar ante la
 autoridad de control de tu país.</p>
 
 <h2>Menores de edad</h2>
-<p>Velora no está dirigida a menores de 14 años y no recogemos datos de menores a sabiendas.
-Si un adulto registra a un menor de su familia dentro de su hogar, es ese adulto quien asume
-la responsabilidad de hacerlo. Si crees que un menor nos ha entregado datos sin autorización,
+<p>Velora es para personas mayores de 18 años. Un menor de edad solo puede usarla con la
+autorización de su madre, su padre o su representante legal, que es quien la da en su nombre.
+Lo mismo vale para un menor que alguien añada a un parche sin tener la app: quien lo añade
+debe contar con esa autorización. Si crees que tenemos datos de un menor sin ella,
 escríbenos y los borraremos.</p>
 
 <h2>Seguridad</h2>
 <p>Todo el tráfico va cifrado (HTTPS). Las contraseñas se guardan con <code>bcrypt</code>. El
 acceso a los datos está aislado por persona y por hogar directamente en la base de datos, de
 modo que la aplicación no puede leer datos de otro hogar aunque quisiera. Ningún sistema es
-infalible: si ocurriera una brecha que te afecte, te lo comunicaremos.</p>
+infalible: si ocurriera una brecha que te afecte, te lo comunicaremos, y la reportaremos
+a la Superintendencia de Industria y Comercio en los quince (15) días hábiles siguientes a
+detectarla.</p>
 
 <h2>Cambios en esta política</h2>
 <p>Si cambia algo relevante, actualizaremos esta página y la fecha de arriba, y te avisaremos

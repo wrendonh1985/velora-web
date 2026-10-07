@@ -36,6 +36,8 @@ be understood, not to protect us.</p>
 
 <h2>Who is responsible</h2>
 <p>The data controller is <strong>Wilson Rendón</strong>, an individual residing in Colombia.</p>
+<!-- PENDIENTE (Will): la misma dirección y teléfono que en privacidad.html. -->
+<p>Mailing address: [DIRECCIÓN], Colombia. Phone: [TELÉFONO].</p>
 <p>For any question, complaint, or to exercise your rights, write to
 <a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
 
@@ -149,11 +151,16 @@ be understood, not to protect us.</p>
 
 <h2>Who we share it with</h2>
 <p>If you join a parche, the people in it see your name and what is recorded inside it (the expenses, your share and the payments between you). They do not see your accounts, your transactions or anything about your household. Anyone with the invite code sees the parche's name and the name of whoever created it. What you confirm from a parche becomes one more transaction in your Velora, so your household's admin sees it just like your other transactions.</p>
-<p>If you add someone who doesn't have the app, we store the name you type and whatever is recorded under that name in the parche, and only the people in the parche see it. If that person joins with their link, it becomes theirs and they see it in their Velora. If they don't join, it stays in the parche because it is part of its accounts: anyone in the parche can change the name, and that person can ask us to remove it by writing to velora.privacidad@gmail.com.</p>
+<p>If you add someone who doesn't have the app, we store the name you type and whatever is recorded under that name in the parche, and only the people in the parche see it. If that person joins with their link, it becomes theirs and they see it in their Velora. If they don't join, it stays in the parche because it is part of its accounts: anyone in the parche can change the name, and that person can ask us to remove it by writing to velora.privacidad@gmail.com. If they already have expenses or payments recorded, those figures stay because without them the others' accounts would not add up, but we delete their name and they appear as "Deleted person", with nothing that identifies them.</p>
 <p>Only with those needed for the app to work, and always as data processors, not owners of
 the data:</p>
 <ul>
-  <li><strong>Supabase, Inc.</strong> — hosts the database and the account system.</li>
+  <li><strong>Supabase Pte. Ltd.</strong> — hosts the database and the account system.</li>
+  <li><strong>Brevo (Sendinblue SAS)</strong> — sends the account emails: the one to confirm
+      your address and the one to recover your password. It receives your email address and
+      the content of that message; nothing else.</li>
+  <li><strong>Microsoft (OneDrive)</strong> — stores our <strong>encrypted</strong> backups.
+      Without our key, Microsoft cannot read them.</li>
   <li><strong>Google Play and the App Store</strong> — distribute the application. They do not
       receive your financial data.</li>
   <li><strong>Google LLC</strong> — <em>only if you choose "Continue with Google"</em>. It
@@ -172,7 +179,8 @@ the data:</p>
 <p>On Supabase servers in the <strong>United States</strong> (region <code>us-east-2</code>,
 Ohio). If you write from Colombia, the European Union or another country, your data is
 transferred and stored there. Supabase acts as a processor and is bound by a data processing
-agreement.</p>
+agreement, which is part of its terms of service. Brevo processes your email address in the
+European Union.</p>
 
 <h2>On your phone</h2>
 <p>Velora keeps a copy of your data on the device itself so the app can open and be useful
@@ -212,8 +220,12 @@ involved.</p>
       stops being linked to you. It is the only way that person's debt still adds up: without
       it, their balance would show as reduced with no payment to explain it.</li>
 </ul>
-<p>Deletion is immediate and cannot be undone. We keep no copies of you afterwards, other than
-what the provider's backups may hold temporarily before rotating. The files produced by
+<p>Deletion is immediate and cannot be undone. The only thing left is what was already in
+<strong>our backups</strong>: we make one every week and keep those from the last
+<strong>eight weeks</strong> so we can restore the service if something fails. We keep them on
+our own computer and, encrypted, in the cloud. They are used for nothing else, and after eight
+weeks none is left with your data.<!-- OJO: solo es cierto cuando scripts/respaldo.sh rote
+también las copias locales (hoy rota solo las de OneDrive). --> The files produced by
 <em>Export my data</em> delete themselves in under a day.</p>
 <p><strong>Deleting your account is never blocked.</strong> If you are the only person
 administering a household where other people remain, Velora makes the longest-standing member
@@ -234,23 +246,36 @@ left without anyone to administer it.</p>
 </ul>
 <p>None of these rights costs money or requires a justification. If you prefer to exercise them
 by email, write to <a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a>.</p>
-<p>In Colombia, under Law 1581 of 2012, we will answer queries within ten (10) business days and
-complaints within fifteen (15) business days. If you are not satisfied, you may turn to the
+<p><strong>How to make a query or a complaint.</strong> Write to
+<a href="mailto:velora.privacidad@gmail.com">velora.privacidad@gmail.com</a> from your account's
+email address (or, if you have no account, telling us how to identify you) and tell us what you
+are asking for: to know your data, correct it, delete it, withdraw your consent or complain
+about something. If it is a complaint, describe the facts behind it and attach any documents
+that support it.</p>
+<p>In Colombia, under Law 1581 of 2012, we will answer <strong>queries</strong> within ten (10)
+business days; if we cannot, we will tell you why and answer within five (5) more at most.
+<strong>Complaints</strong> within fifteen (15) business days, extendable by eight (8) more
+with notice of the reason. If your complaint is missing something, we will ask for it within
+the following five (5) business days; if two (2) months go by without you completing it, we
+will consider it withdrawn. While we resolve it, your data will be flagged as "complaint in
+progress". If you are not satisfied, you may turn to the
 Superintendencia de Industria y Comercio. If you are in the European Union, we will respond
 within the one (1) month period set by the GDPR and you may complain to your country's
 supervisory authority.</p>
 
 <h2>Children</h2>
-<p>Velora is not directed at children under 14 and we do not knowingly collect data from
-minors. If an adult registers a minor of their family within their household, that adult takes
-responsibility for doing so. If you believe a minor has given us data without authorisation,
-write to us and we will delete it.</p>
+<p>Velora is for people aged 18 or over. A minor may only use it with the authorisation of
+their mother, father or legal guardian, who gives it on their behalf. The same applies to a
+minor someone adds to a parche without the app: whoever adds them must have that
+authorisation. If you believe we hold a minor's data without it, write to us and we will
+delete it.</p>
 
 <h2>Security</h2>
 <p>All traffic is encrypted (HTTPS). Passwords are stored with <code>bcrypt</code>. Access to
 data is isolated per person and per household directly in the database, so the application
 cannot read another household's data even if it tried. No system is infallible: if a breach
-affecting you were to occur, we will tell you.</p>
+affecting you were to occur, we will tell you, and we will report it to the Superintendencia
+de Industria y Comercio within fifteen (15) business days of detecting it.</p>
 
 <h2>Changes to this policy</h2>
 <p>If anything relevant changes, we will update this page and the date above, and we will let
