@@ -27,7 +27,9 @@
 <body>
 
 <h1>Política de privacidad de Velora</h1>
-<p class="meta">Última actualización: 7 de octubre de 2026</p>
+<p class="meta">Última actualización: 8 de octubre de 2026</p>
+<!-- 8-oct-2026: Sentry como encargado de los informes de fallos (región UE). Cambia con
+     quién se comparte algo, así que se sube la fecha Y POLITICA_VERSION a la vez. -->
 <!-- 7-oct-2026: Ley 1581 — Brevo y OneDrive como encargados, respaldos de 8 semanas,
      reclamos con plazos, menores a 18, reporte a la SIC. Se publica YA aunque
      POLITICA_VERSION de los builds vivos siga en 2026-10-05: lo publicado decía cosas
@@ -132,12 +134,27 @@ domicilio en Colombia.</p>
         completo del error, porque podía arrastrar datos que hubieras escrito.</td>
     <td>Para poder arreglar fallos.</td>
   </tr>
+  <tr>
+    <td>Informes de fallos</td>
+    <td><strong>Solo si la app falla</strong>, se envía un informe con el tipo de fallo, la
+        traza técnica (en qué parte del código ocurrió), el modelo de teléfono, el sistema
+        operativo, la versión de la app, la pantalla en la que estabas y un número al azar
+        que identifica la instalación, no a ti: no tiene relación con tu cuenta y cambia
+        cuando cierras sesión. <strong>No se envía nada de tu cuenta</strong> (tus movimientos,
+        saldos, metas o tu correo), y el texto técnico del error se limpia antes de
+        guardarse: se tapan las cifras y lo que va entre comillas, que es donde podría
+        aparecer algo que escribiste.</td>
+    <td>Para enterarnos de los fallos que no se ven desde dentro, como un cierre
+        inesperado, y poder arreglarlos.</td>
+  </tr>
 </table>
 
 <h2>Lo que Velora no hace</h2>
 <ul>
   <li><strong>No tiene analítica, ni publicidad, ni rastreadores de terceros.</strong> No hay
-      ningún SDK que siga lo que haces dentro o fuera de la app.</li>
+      ningún SDK que siga lo que haces dentro o fuera de la app. El único componente de
+      terceros que lleva es el de los informes de fallos, y no envía nada mientras la app
+      funciona bien.</li>
   <li><strong>No vendemos ni cedemos tus datos a nadie</strong>, ni con fines comerciales ni
       de ningún otro tipo.</li>
   <li><strong>No nos conectamos a tu banco.</strong> Velora no lee tus cuentas ni tus
@@ -184,6 +201,9 @@ tratamiento, no como dueños de los datos:</p>
       contenido de ese mensaje; nada más.</li>
   <li><strong>Microsoft (OneDrive)</strong> — guarda nuestras copias de seguridad
       <strong>cifradas</strong>. Sin nuestra clave, Microsoft no puede leerlas.</li>
+  <li><strong>Sentry (Functional Software, Inc.)</strong> — recibe los informes de fallos
+      descritos arriba, solo cuando la app falla. No recibe tus datos financieros ni nada
+      que te identifique, y no guarda tu dirección IP.</li>
   <li><strong>Google Play y App Store</strong> — distribuyen la aplicación. No reciben tus
       datos financieros.</li>
   <li><strong>Google LLC</strong> — <em>solo si eliges «Continuar con Google»</em>. Comprueba
@@ -203,7 +223,7 @@ tratamiento, no como dueños de los datos:</p>
 Ohio). Si escribes desde Colombia, la Unión Europea u otro país, tus datos se transfieren y
 almacenan allí. Supabase actúa como encargado y está sujeto a un contrato de tratamiento de
 datos, que forma parte de sus condiciones de servicio. Brevo trata tu correo en la Unión
-Europea.</p>
+Europea, y Sentry guarda los informes de fallos también en la Unión Europea.</p>
 
 <h2>En tu teléfono</h2>
 <p>Velora guarda una copia de tus datos en el propio dispositivo para que la aplicación abra y

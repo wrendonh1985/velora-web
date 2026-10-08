@@ -27,7 +27,7 @@
 <body>
 
 <h1>Velora Privacy Policy</h1>
-<p class="meta">Last updated: 7 October 2026</p>
+<p class="meta">Last updated: 8 October 2026</p>
 <p class="lang"><a href="./privacidad.html">Leer en español</a></p>
 
 <p>Velora is an app for tracking personal and household finances. This policy explains what
@@ -107,12 +107,25 @@ be understood, not to protect us.</p>
         error text, because it could carry along data you had typed.</td>
     <td>So we can fix failures.</td>
   </tr>
+  <tr>
+    <td>Crash reports</td>
+    <td><strong>Only if the app fails</strong>, a report is sent with the type of failure, the
+        technical trace (which part of the code it happened in), the phone model, the operating
+        system, the app version, the screen you were on and a random number that identifies the
+        installation, not you: it has no link to your account and it changes when you sign out.
+        <strong>Nothing from your account is sent</strong> (your transactions, balances, goals or
+        email), and the technical error text is cleaned before it is stored: numbers and
+        anything in quotes, which is where something you typed could show up, are masked.</td>
+    <td>So we find out about failures that cannot be seen from inside, such as an
+        unexpected crash, and can fix them.</td>
+  </tr>
 </table>
 
 <h2>What Velora does not do</h2>
 <ul>
   <li><strong>No analytics, no advertising, no third-party trackers.</strong> There is no SDK
-      following what you do inside or outside the app.</li>
+      following what you do inside or outside the app. The only third-party component it
+      carries is the one for crash reports, and it sends nothing while the app works fine.</li>
   <li><strong>We do not sell or hand over your data to anyone</strong>, for commercial or any
       other purposes.</li>
   <li><strong>We do not connect to your bank.</strong> Velora does not read your accounts or
@@ -161,6 +174,9 @@ the data:</p>
       the content of that message; nothing else.</li>
   <li><strong>Microsoft (OneDrive)</strong> — stores our <strong>encrypted</strong> backups.
       Without our key, Microsoft cannot read them.</li>
+  <li><strong>Sentry (Functional Software, Inc.)</strong> — receives the crash reports
+      described above, only when the app fails. It does not receive your financial data or
+      anything that identifies you, and it does not store your IP address.</li>
   <li><strong>Google Play and the App Store</strong> — distribute the application. They do not
       receive your financial data.</li>
   <li><strong>Google LLC</strong> — <em>only if you choose "Continue with Google"</em>. It
@@ -180,7 +196,7 @@ the data:</p>
 Ohio). If you write from Colombia, the European Union or another country, your data is
 transferred and stored there. Supabase acts as a processor and is bound by a data processing
 agreement, which is part of its terms of service. Brevo processes your email address in the
-European Union.</p>
+European Union, and Sentry also stores crash reports in the European Union.</p>
 
 <h2>On your phone</h2>
 <p>Velora keeps a copy of your data on the device itself so the app can open and be useful
